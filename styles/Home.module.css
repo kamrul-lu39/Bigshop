@@ -1,0 +1,27 @@
+/* styles/Home.module.css */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+ 
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (max-width: 1024px) {
+    .productGrid {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productGrid {
+      grid-template-columns: 1fr; /* 1 card per row for mobile devices */
+    }
+  }
+  

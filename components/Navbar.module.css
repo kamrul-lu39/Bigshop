@@ -1,0 +1,94 @@
+/* Styles for the Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Adjust padding for smaller height */
+    background-color: #333; /* Dark background color */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Adjust height */
+  }
+  
+  .navbarBrand {
+    font-size: 1.5rem; /* Reduce size for better fit */
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 20px; /* Adjust gap */
+    list-style: none;
+  }
+  
+  .navLinks li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks li a:hover {
+    color: #f0a500; /* Highlight color for links */
+  }
+  
+  .navActions {
+    display: flex;
+    align-items: center; /* Center the cart and buttons */
+    gap: 15px;
+  }
+  
+  .cartIcon {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .cartIcon:hover {
+    color: #f0a500; /* Icon hover color */
+  }
+  
+  .loginButton, .signupButton {
+    padding: 8px 15px; /* Adjust button padding for smaller height */
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .loginButton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .signupButton {
+    background-color: #f0a500;
+    color: #333;
+  }
+  
+  .loginButton:hover {
+    background-color: #f0a500;
+    color: #333;
+  }
+  
+  .signupButton:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none; /* Hide links on mobile */
+    }
+  
+    .navActions {
+      gap: 10px;
+    }
+  }
+  
