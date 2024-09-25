@@ -1,0 +1,91 @@
+/* Home.module.css or Products.module.css */
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Product Grid for 3 columns */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 40px; /* Larger gap between product cards */
+  max-width: 1200px; /* Centered grid with a maximum width */
+  margin: 0 auto; /* Center the grid on the page */
+}
+
+@media (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 20px; /* Reduce gap on mobile */
+  }
+}
+/* Product.module.css */
+/* Product.module.css */
+
+/* Container for pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Adds space above and below the pagination */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Pagination button styling */
+.pageButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Primary color for the buttons */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Disabled button styling */
+.pageButton:disabled {
+  background-color: #ccc; /* Greyed out background for disabled button */
+  cursor: not-allowed;
+}
+
+/* Button hover effect */
+.pageButton:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Button active state */
+.pageButton:active:not(:disabled) {
+  transform: translateY(1px); /* Slight push down on click */
+  background-color: #003f7f; /* Even darker shade on click */
+}
+
+/* View All Products button styling */
+.viewAllButton {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745; /* Green background for view all button */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.viewAllButton:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.viewAllContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Reduce gap from pagination */
+}

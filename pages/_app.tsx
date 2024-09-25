@@ -1,11 +1,16 @@
 // pages/_app.tsx
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import '../styles/global.css'; // Make sure the path is correct
-import type { AppProps } from 'next/app';
+import { SessionProvider } from 'next-auth/react'; // Import the SessionProvider from NextAuth.js
+import { AppProps } from 'next/app';
+import Navbar from '../components/Navbar'; // Import your Navbar component
+import '../styles/global.css'; // Import global CSS
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+  return (
+    // Wrap your app in the SessionProvider
+    <SessionProvider session={session}>
+      <Component {...pageProps} />
+    </SessionProvider>
+  );
 }
 
 export default MyApp;

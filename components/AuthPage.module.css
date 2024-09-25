@@ -1,0 +1,103 @@
+/* Full-page background container */
+.authContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+}
+
+/* Semi-transparent overlay */
+.authBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Box containing the form */
+.authBox {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  position: relative; /* So the back arrow can be positioned inside */
+}
+
+/* Go back button inside the card */
+.goBackWrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Styling for the left arrow (go back button) */
+.goBackButton {
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Toggle button styles */
+.toggleButtons button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.toggleButtons .active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+/* Input fields styling */
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit button styling */
+.submitButton, .googleButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.googleButton {
+  background-color: #db4437;
+}
+
+.googleButton:hover, .submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Switch button for sign in / sign up link */
+.switchButton {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.switchButton:hover {
+  color: #0056b3;
+}

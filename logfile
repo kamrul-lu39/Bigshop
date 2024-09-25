@@ -1,0 +1,14 @@
+2024-09-24 20:55:46.165 EDT [96569] LOG:  starting PostgreSQL 14.13 (Homebrew) on x86_64-apple-darwin23.4.0, compiled by Apple clang version 15.0.0 (clang-1500.3.9.4), 64-bit
+2024-09-24 20:55:46.168 EDT [96569] LOG:  listening on IPv6 address "::1", port 5432
+2024-09-24 20:55:46.168 EDT [96569] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-09-24 20:55:46.169 EDT [96569] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2024-09-24 20:55:46.173 EDT [96570] LOG:  database system was shut down at 2024-09-24 20:55:33 EDT
+2024-09-24 20:55:46.176 EDT [96569] LOG:  database system is ready to accept connections
+2024-09-24 20:56:08.994 EDT [96596] FATAL:  role "postgres" does not exist
+2024-09-24 20:56:26.620 EDT [96870] FATAL:  role "postgres" does not exist
+2024-09-24 21:02:26.633 EDT [96569] LOG:  could not open file "postmaster.pid": No such file or directory
+2024-09-24 21:02:26.634 EDT [96569] LOG:  performing immediate shutdown because data directory lock file is invalid
+2024-09-24 21:02:26.634 EDT [96569] LOG:  received immediate shutdown request
+2024-09-24 21:02:26.635 EDT [96569] LOG:  could not open file "postmaster.pid": No such file or directory
+2024-09-24 21:02:26.635 EDT [96575] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2024-09-24 21:02:26.643 EDT [96569] LOG:  database system is shut down
