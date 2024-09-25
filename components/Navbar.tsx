@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'; // For page navigation
 import styles from './Navbar.module.css'; // Import your styles
 import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon from Font Awesome
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 
 interface NavbarProps {
   cartItemCount: number; // Prop to pass the cart item count
